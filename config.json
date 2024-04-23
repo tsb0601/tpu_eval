@@ -1,0 +1,117 @@
+{   
+    "model_module": "llava_origin",
+    "model_path": "/home/penghao/penghao_workspace/LLaVA/llava-v1.5-7b-finetune-5565k-bs512-ep2-v128",
+    "data_folder": "/scratch/cambrian/evaluation/benchmarks/",
+    "output_name": "llava-v1.5-7b-finetune-5565k-bs512-ep2-v128",
+    "temperature": 0,
+    "top_p": null,
+    "num_beams": 1,
+    "max_length": 1024,
+    "world_size": 1,
+    "benchmarks":{
+        "mmbench":{
+            "eval": true,
+            "split": "mmbench_dev_20230712",
+            "single_pred_prompt": true,
+            "lang": "en",
+            "all_rounds": false
+        },
+        "mmbench_cn":{
+            "eval": true,
+            "split": "mmbench_dev_cn_20231003",
+            "single_pred_prompt": true,
+            "lang": "cn",
+            "all_rounds": false
+        },
+        "vqav2":{
+            "eval": true,
+            "split": "llava_vqav2_mscoco_test-dev2015"
+        },
+        "gqa":{
+            "eval": true
+        },
+        "vizwiz":{
+            "eval": true
+        },
+        "scienceqa":{
+            "eval": true,
+            "single_pred_prompt": true
+        },
+        "textvqa":{
+            "eval": true
+        },
+        "pope":{
+            "eval": true
+        },
+        "mme":{
+            "eval": true
+        },
+        "llava_bench":{
+            "eval": true,
+            "openai_api_key":""
+        },
+        "mmvet":{
+            "eval": true
+        },
+        "seed_bench":{
+            "eval": true
+        },
+        "MMMU":{
+            "eval": true,
+            "data_path": "MMMU/MMMU",
+            "split": "validation",
+            "task_instructions": "",
+            "multi_choice_example_format": "{}\n\n{}\n\nAnswer with the option's letter from the given choices directly.",
+            "short_ans_example_format": "{}\n\nAnswer the question using a single word or phrase."
+        },
+        "chartQA":{
+            "eval": true,
+            "pred_prompt": "Answer the question using a single number or phrase."
+            
+        },
+        "AI2D":{
+            "eval": true
+        },
+        "realworldqa":{
+            "eval": true,
+            "data_path": "visheratin/realworldqa",
+            "split": "test",
+            "single_pred_prompt": true
+        },
+        "mmstar":{
+            "eval": true,
+            "data_path": "Lin-Chen/MMStar",
+            "split": "val",
+            "single_pred_prompt": true
+        },
+        "MMVP":{
+            "eval": true
+        },
+        "vstar":{
+            "eval": true
+        },
+        "mathvista":{
+            "eval": true,
+            "data_path": "AI4Math/MathVista",
+            "split": "testmini",
+            "openai_api_key":""
+            
+        },
+        "docvqa":{
+            "eval": true,
+            "pred_prompt": "Answer the question using a single word or phrase."
+        },
+        "infovqa":{
+            "eval": true,
+            "pred_prompt": "Answer the question using a single word or phrase."
+        },
+        "ocrbench":{
+            "eval": true,
+            "pred_prompt": "Answer the question using a single word or phrase."
+        },
+        "stvqa":{
+            "eval": true,
+            "pred_prompt": "Answer the question using a single word or phrase."
+        }
+    }
+  }

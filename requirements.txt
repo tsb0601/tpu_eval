@@ -1,0 +1,11 @@
+datasets
+shortuuid
+openpyxl
+pyarrow
+pandas
+scipy
+pillow
+protobuf
+python-Levenshtein
+openai==0.28.0
+git+https://github.com/haotian-liu/LLaVA.git@v1.2.2.post1
